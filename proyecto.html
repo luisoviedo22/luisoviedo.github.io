@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head> <!--lo anterior es la fuente asignada a la pagina, obtenido de Google fonts--> 
+  <style>
+    body {
+      font-size: 20px; /*esto es para cambiar el tamaño de todo el texto*/
+      font-family: "Bebas Neue"; /*esto es para cambiar la fuente a la que se inserto anteriormente*/
+      width: 600px; /*esto es para cambiar el ancho del cuadro*/
+      margin: 0 auto; /*esto genera el espacioado deseado alrededor de este caso el cuadro creado*/
+      background-color: #87CEFA; /*esto cambia el color de fondo del cuadro*/
+      padding: 0px 20px 20px 20px; /*superior, derecha, inferior, izquierda: modifica el espacio entre
+                                    el contenido del cuadro el borde del cuadro*/
+      border: 0 px solid black; /*esto cambia el grosor y color del borde del cuadro*/
+    } 
+    h1 {
+      font-size: 60px; /*esto ajusta el tamaño del texto en este caso del titulo*/
+      text-align: center; /*esto ajusta la ubicacion del titulo*/
+      margin: 20px 20px; /*esto da el espaciado entre este titulo y las demas cosas alrededor*/
+      padding: 0px; /*este es el espacio que tiene para moverse en este caso el titulo*/
+      color: #00539f; /*aqui se le da color a la letra del titulo*/
+      text-shadow: 3px 3px 1px black; /*aqui se da una sobra al titulo como tipo 3D*/
+    } 
+
+    p,
+    li {
+      font-size: 16px; /*aqui se le da el tamaño de letra para los parrafo e items de la lista*/
+      line-height: 1; /*este es el espacio entre cada reglon*/
+      letter-spacing: 0.8px; /*este es el espacio entre letras*/
+    }
+
+    html {
+      background-color: blue; /*esto da color al fondo base de la pagina web*/
+    }
+     
+    img {
+      display: block; /*este valor ubica la imagen el un lugar "block" hace que este en una linea SOLO, pero 
+      puede cambiar como que se este a la derecha, etc con otra palabra clave*/
+      margin: 0 auto; /*esto da separacion a todos los lados de en este caso la imagen de las demas cosas 
+      alrededore de la imagen*/
+      width: 250px; /*establece el ancho de la imagen*/
+      max-width: 300px; /*este es el ancho maximo de la imagen*/
+      height: 200px; /*establece la altura de la imagen en este caso en auto para que la imagen no se distorsione*/
+
+    }
+    </style>
+  <head> <!--dentro de estas etiquetas va informacion general (metadatos) qu eno se muestran directamente en la 
+            pagina web pero proporciona informacion importante para los navegadores y motores de busqueda-->
+    <meta charset="utf-8" />
+    <title>
+      Mi página de prueba <!--titulo que va en la pestaña del navegador-->
+    </title>
+  </head>
+  <body> <!--dentro de esto va todo lo visible en la pagina para el usuario-->
+    <h1>
+      página de prueba <!--este es el titulo principal a inicio de pagina-->
+    </h1>
+    <img src="C:\Users\MARIO\Desktop\JavaScript\images\foto.jpeg" 
+      alt="un señor con lentes de espalda programando"/> <!--aqui se inserta una imagen: primero se pone la ruta 
+        de acceso o link de la imagen y luego con alt un texo que describa la imagen en caso de no poder verla-->
+  <p>
+   Esta pagina solo es de prueba. Tiene una imagen que al dar clic en ella cambia a otra distinta, una frase 
+  con un enlace o link en ella, que al dar clic en ella te envia a otra pagina y finalmente un boton que permite 
+  cambiar el nombre de bienvenida segun el usuario.
+  </p> <!--con este comando <p> se usa para poner parrafos en la pagina-->
+  <h2>
+    Lista de contenido de esta pagina web de prueba: <!--aqui se pone un subtitulo con otro numeor para h-->
+  </h2>
+  <ul> <!--aqui se da a saber que haga una lista, con "ul" como aqui es para iterar cada item con puntos, también
+            se usa "ol" para que cada item que enumerado-->
+    <li>Imagen que al dar clic en ella cambia por otra.</li><!--cada item debe estar dentro de comandos-->
+    <li>Frase con enlace directo a otra página.</li>
+    <li>Cambio de nombre según el usuario para mensaje de bienvenida personalizado.</li>
+  </ul>
+  <p>El siguiente par de palabras es un enlace directo a otra pagina: 
+    <a href="https://www.cosmopolitan.com/es/consejos-planes/familia-amigos/a44105565/frases-motivacion-animo/"
+    target="_blank" rel="noopener noreferrer">Frases motivacionales.</a></p>
+    <!--en el anterior parrafo se pone el parrafo normal excepto que se usa el comando <a> para añadir a una 
+      palabra la funcion de enlace directo a la pagina deseada, luego target para que abra la pagian en una 
+    pestaña nueva, rel para para que le dice al navegador que tiene que abrirlo en una ventana nueva "noopener"
+    y "noreferrer" por seguridad-->
+    <button>Cambiar de usuario</button> <!--boton en la pagina-->
+    <script src="C:\Users\MARIO\Desktop\JavaScript\scripts\main.js"></script> <!--se inseto un codigo js-->
+  </body>
+</html>
